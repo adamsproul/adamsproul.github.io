@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>Adam Sproul</title>
+
+    <link href="/Content/css/bootstrap.css" rel="stylesheet">
+    <link href="/Content/css/main.css" rel="stylesheet">
+    <link href="/Content/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <script src="/Scripts/jquery.min.js"></script>
+    <script src="/Scripts/smoothscroll.js"></script>
+    <script src="/Scripts/Chart.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#nav">
+
+    <div id="section-topbar">
+        <div id="topbar-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="dropdown">
+                        <ul id="nav" class="nav">
+                            <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#skills" title="Skills"><i class="icon-briefcase"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-12">
+                    <h1>Adam Sproul</h1>
+                    <h3>Web &amp; Software Developer | adamsproul@outlook.com</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="about" name="about"></section>
+    <div id="intro">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>ABOUT</h5>
+                </div>
+                <div class="col-lg-6">
+                    <p>I am a 25 year old Software Developer based in Cambridgeshire. I love keeping up to date with the latest updates in technology and science. You'll often find me watching a documentary on something.</p>
+                    @*<p>I'm web designer & front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like branding, icon design or web development.</p>*@
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="resume" name="resume"></section>
+    <div class="container desc">
+        <div class="row">
+
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>EDUCATION</h5>
+            </div>
+            <div class="col-lg-6">
+                <p>
+                    <t>MSCi Computer Science With Industrial Experience (Hons.) (First Class)</t><br />
+                    Lancaster University, UK<br />
+                    <i>4 Years Course</i>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>JUNE 2010</sm></p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+    <div class="container desc">
+        <div class="row">
+
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>WORK</h5>
+            </div>
+            <div class="col-lg-6">
+                <p>
+                    <t>Software Developer</t><br />
+                    i-dash Ltd. <br />
+                </p>
+                <p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>JANUARY 2011 - CURRENT</sm></p>
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                    <t>Software Developer - Intern</t><br />
+                    Xevo Software Ltd. <br />
+                </p>
+                <p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>2009 - 2010</sm></p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+    <section id="skills" name="skills"></section>
+    <div id="skillswrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>SKILLS</h5>
+                </div>
+                <div class="col-lg-3 centered">
+                    <canvas id="javascript" height="130" width="130"></canvas>
+                    <p>Javascript</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 60,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 40,
+                                    color: "#ecf0f1"
+                                }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-3 centered">
+                    <canvas id="bootstrap" height="130" width="130"></canvas>
+                    <p>Bootstrap</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 80,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 20,
+                                    color: "#ecf0f1"
+                                }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-3 centered">
+                    <canvas id="wordpress" height="130" width="130"></canvas>
+                    <p>Wordpress</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 60,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 40,
+                                    color: "#ecf0f1"
+                                }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+
+                <div class="col-lg-3 col-lg-offset-3 centered">
+                    <canvas id="html" height="130" width="130"></canvas>
+                    <p>HTML/CSS</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 70,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 30,
+                                    color: "#ecf0f1"
+                                }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <section id="contact" name="contact"></section>
+    <div id="footwrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>CONTACT</h5>
+                </div>
+                <div class="col-lg-6">
+                    <p><t>Email</t><br />adamsproul@outlook.com<br /></p>
+                    <p>
+                        <t>Adress</t><br />
+                        St. Neots, <br />
+                        Cambridgeshire, <br />
+                        England. <br />
+                    </p>
+                    <p>
+                        <t>Phone</t><br />
+                        +44 7411-788660 <br />
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <p><sm>SOCIAL LINKS</sm></p>
+                    <p>
+                        <a href="https://www.facebook.com/adam.sproul"><i class="icon-facebook"></i></a>
+                        <a href="http://www.linkedin.com/pub/adam-sproul/16/b75/1a9"><i class="icon-linkedin"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-47076133-1', 'adamsproul.co.uk');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
